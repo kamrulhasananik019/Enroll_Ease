@@ -26,13 +26,12 @@ const Enroll = () => {
         const email = form.email.value;
         const photoURL = form.photoURL.value;
         const date = dates.value
-        const picture = form.picture;
         const subject = form.subject.value;
         const phone = form.phone.value;
         const address = form.address.value;
         // console.log(name, email, photoURL, date, picture, subject, phone, address);
         const addEnroll = {
-            name, email, photoURL, date, picture, subject, phone, address, collegeName,
+            name, email, photoURL, date,  subject, phone, address, collegeName,
             image, ratings, research, admissionDates, process, events, works, researchHistory, sports
         }
 

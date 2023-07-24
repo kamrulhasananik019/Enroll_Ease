@@ -56,12 +56,12 @@ export const router = createBrowserRouter([
             },
             {
                 path: "admission/:id",
-                element: <Enroll></Enroll>,
+                element: <PrivateRoute><Enroll></Enroll></PrivateRoute>,
                 loader: ({ params }) => fetch(`http://localhost:5000/admission/${params.id}`)
             },
             {
                 path: "mycollege",
-                element:<PrivateRoute> <MyCollege></MyCollege></PrivateRoute>
+                element:<MyCollege></MyCollege>
             }
         ]
     },

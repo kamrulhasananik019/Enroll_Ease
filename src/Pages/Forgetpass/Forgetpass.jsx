@@ -8,7 +8,10 @@ const Forgetpass = () => {
         event.preventDefault(); 
         const formData = new FormData(event.target);
         const email = formData.get('email');
-        resetPass(email);
+        resetPass(email)
+        .then(
+            alert("Check Your Mail")
+        );
     }
 
     return (
